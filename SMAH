@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<title>Reset Password</title>
+		<style>
+				* {
+						margin: 0;
+						padding: 0;
+						text-align: center;
+				}
+				
+				body {
+						background: #2b96ff;
+						padding-top: 50px;
+						justify-content: center;
+						width: 100%;
+				}
+				
+				h1 {
+						font-weight: bold;
+						color: white;
+						font-family: sans-serif;
+				}
+				
+				.main {
+				    border-top: solid 6px purple;
+					  border-right: solid 6px red;
+						border-bottom: solid 6px green;
+			  		border-left: solid 6px brown;
+						background: #f1f1dd;
+						width: 60%;
+						margin-left: 20%;
+						margin-top: 30px;
+						padding-top: 25px;
+						border-radius: 40px;
+						animation: bdcol 2s linear infinite;
+						padding-bottom: 15px;
+				}
+				
+				@keyframes bdcol {
+						-0% {
+								border-top: solid 6px purple;
+								border-right: solid 6px red;
+								border-bottom: solid 6px green;
+							  border-left: solid 6px brown;
+					  }
+					  
+					 	25% {
+					 			border-top: solid 6px brown;
+								border-right: solid 6px purple;
+								border-bottom: solid 6px red;
+					  		border-left: solid 6px green;
+					 	}
+					  
+					 	50% {
+					 			border-top: solid 6px green;
+								border-right: solid 6px brown;
+								border-bottom: solid 6px purple;
+					  		border-left: solid 6px red;
+					 	}
+					  
+					 	75% {
+					 			border-top: solid 6px red;
+								border-right: solid 6px green;
+								border-bottom: solid 6px brown;
+					  		border-left: solid 6px purple;
+					 	}
+					  
+					 	100% {
+				    		border-top: solid 6px purple;
+							  border-right: solid 6px red;
+								border-bottom: solid 6px green;
+			  				border-left: solid 6px brown;
+			  		}
+				}
+				
+				form {
+						font-size: 24px;
+				}
+				
+				ul {
+				  	display: flex;
+				  	flex-direction: row;
+				  	justify-content: space-between;
+				  	width: 60%;
+				  	margin-left: 20%;
+				  	margin-top: 10px;
+				}
+				
+				.footer {
+						color: white;
+						margin-bottom: 15px;
+				}
+		</style>
+</head>
+<body>
+		<h1>RESET PASSWORD</h1>
+		<div class="main">
+				<h3>Input Details to Reset Password</h3><br><br>
+				<form>
+						<label for="username">Username<br><br><input type="text" name="username" placeholder="Enter username here" required></label><br><br><br>
+						<label for="password">Password<br><br><input type="password" name="password" placeholder="*******" required></label><br><br><br>
+						<button type="submit">RESET PASSWORD</button><br><br>
+					  <label for="remember" style="font-size: 15px;">Remember me <input type="checkbox" style="height:10px;"></label>
+				</form>
+		</div>
+		
+		<div class="footer">
+				<h4 style="margin-top: 20px;">Languages</h4>
+				<ul>
+				<li>Youruba</li>
+				<li>Hausa</li>
+				<li>Igbo</li>
+		</ul>
+		</div>
+		
+</body>
+</html>
